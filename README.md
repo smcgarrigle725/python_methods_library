@@ -19,18 +19,17 @@
 | 08 | `08_time_series` | 7 | statsmodels, prophet, sktime | Mixed |
 | 09 | `09_bayesian_methods` | 6 | PyMC, ArviZ, scipy | Mixed |
 | 10 | `10_statistical_modelling` | 6 | statsmodels, lifelines, pygam | Mixed |
-| 11 | `11_data_pipelines` | 5 | scikit-learn, great_expectations | Mixed |
-| 12 | `12_nlp_fundamentals` | 6 | spaCy, NLTK, gensim, transformers | Mixed |
-| 13 | `13_deep_learning` | 6 | PyTorch, torchvision | Mixed |
-| 14 | `14_computer_vision` | 6 | torchvision, OpenCV, timm | Mixed |
-| 15 | `15_ab_testing` | 6 | scipy, statsmodels, pymc | Mixed |
-| 16 | `16_graphs_networks` | 6 | NetworkX, PyG | Mixed |
-| 17 | `17_geospatial` | 6 | geopandas, rasterio, folium | Ecological |
-| 10* | `10_model_diagnostics` | 6 | scikit-learn, SHAP, yellowbrick | Mixed |
-| 11* | `11_causal_inference` | 6 | DoWhy, econml, statsmodels | Mixed |
+| 11 | `11_model_diagnostics` | 6 | scikit-learn, SHAP, yellowbrick | Mixed |
+| 12 | `12_data_pipelines` | 5 | scikit-learn, great_expectations | Mixed |
+| 13 | `13_causal_inference` | 6 | DoWhy, econml, statsmodels | Mixed |
+| 14 | `14_nlp_fundamentals` | 6 | spaCy, NLTK, gensim, transformers | Mixed |
+| 15 | `15_deep_learning` | 6 | PyTorch, torchvision | Mixed |
+| 16 | `16_computer_vision` | 6 | torchvision, OpenCV, timm | Mixed |
+| 17 | `17_ab_testing` | 6 | scipy, statsmodels, pymc | Mixed |
+| 18 | `18_graphs_networks` | 6 | NetworkX, PyG | Mixed |
+| 19 | `19_geospatial` | 6 | geopandas, rasterio, folium | Ecological |
 | **Total** | | **~118 notebooks** | | |
 
-*Note: `10_model_diagnostics` and `11_causal_inference` were built as companion folders alongside `10_statistical_modelling` and `11_data_pipelines` respectively. All are complete.*
 
 ---
 
