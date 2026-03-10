@@ -20,8 +20,8 @@
 | 09 | `09_bayesian_methods` | 6 | PyMC, ArviZ, scipy | Mixed |
 | 10 | `10_statistical_modelling` | 6 | statsmodels, lifelines, pygam | Mixed |
 | 11 | `11_model_diagnostics` | 6 | scikit-learn, SHAP, yellowbrick | Mixed |
-| 12 | `12_data_pipelines` | 5 | scikit-learn, great_expectations | Mixed |
-| 13 | `13_causal_inference` | 6 | DoWhy, econml, statsmodels | Mixed |
+| 12 | `12_causal_inference` | 6 | DoWhy, econml, statsmodels | Mixed |
+| 13 | `13_data_pipelines` | 5 | scikit-learn, great_expectations | Mixed |
 | 14 | `14_nlp_fundamentals` | 6 | spaCy, NLTK, gensim, transformers | Mixed |
 | 15 | `15_deep_learning` | 6 | PyTorch, torchvision | Mixed |
 | 16 | `16_computer_vision` | 6 | torchvision, OpenCV, timm | Mixed |
@@ -143,7 +143,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `model_selection` — AIC/BIC with statsmodels, forward/backward selection, cross-validation
 6. `multicollinearity_assumptions` — VIF, condition number, partial regression plots, remedies
 
-### 10 model_diagnostics
+### 11 model_diagnostics
 1. `residual_diagnostics` — Residual plots, Q-Q, scale-location, leverage, Cook's distance with sklearn/statsmodels
 2. `cross_validation` — KFold, StratifiedKFold, TimeSeriesSplit, cross_val_score
 3. `bias_variance_tradeoff` — Learning curves, validation curves, bias-variance decomposition
@@ -151,7 +151,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `feature_importance_shap` — SHAP TreeExplainer / LinearExplainer, summary plots, dependence plots
 6. `model_comparison_metrics` — Comparing models with cross-val, McNemar test, DeLong test for AUC
 
-### 11 causal_inference
+### 12 causal_inference
 1. `potential_outcomes_dags` — Rubin potential outcomes, DAGs with dagitty/pgmpy, backdoor criterion
 2. `matching_methods` — Propensity score matching with DoWhy/causalinference, balance diagnostics
 3. `difference_in_differences` — DiD estimator, parallel trends assumption, event study plot
@@ -159,14 +159,14 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `instrumental_variables` — IV estimation with linearmodels, relevance and exclusion conditions
 6. `sensitivity_analysis` — Rosenbaum bounds, E-values, omitted variable bias sensitivity
 
-### 11 data_pipelines
+### 13 data_pipelines
 1. `sklearn_pipelines` — Pipeline, make_pipeline, ColumnTransformer, FunctionTransformer
 2. `feature_engineering` — PolynomialFeatures, binning, interaction terms, custom features
 3. `missing_data` — SimpleImputer, KNNImputer, IterativeImputer, imputation in pipelines
 4. `data_validation` — great_expectations basics, pandera schema validation, type/range checks
 5. `custom_transformers` — BaseEstimator/TransformerMixin, fit/transform pattern, stateful transformers
 
-### 12 nlp_fundamentals
+### 14 nlp_fundamentals
 1. `text_preprocessing` — Tokenisation, stopword removal, stemming/lemmatisation with spaCy and NLTK
 2. `tfidf_classification` — TF-IDF vectorisation, LogisticRegression/NB text classifiers, evaluation
 3. `word_embeddings` — Word2Vec/GloVe with gensim, sentence embeddings, similarity queries
@@ -174,7 +174,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `sentiment_ner` — VADER sentiment, spaCy NER, transformer-based NER with HuggingFace
 6. `text_similarity` — Cosine similarity, BM25, semantic similarity with sentence-transformers
 
-### 13 deep_learning
+### 15 deep_learning
 1. `pytorch_fundamentals` — Tensors, autograd, custom Dataset/DataLoader, training loop
 2. `training_regularisation` — Batch normalisation, dropout, weight decay, learning rate schedulers
 3. `cnns` — Convolutional layers, pooling, CNN architecture design, image classification
@@ -182,7 +182,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `transfer_learning` — Fine-tuning pretrained models (ResNet, BERT), feature extraction
 6. `dl_evaluation` — Loss curves, confusion matrix, precision/recall for DL, inference profiling
 
-### 14 computer_vision
+### 16 computer_vision
 1. `image_preprocessing` — OpenCV, torchvision transforms, augmentation (RandomFlip, ColorJitter)
 2. `image_classification` — CNN training on CIFAR-10, transfer learning, top-k accuracy
 3. `object_detection` — YOLO overview, torchvision Faster R-CNN, bounding box metrics (mAP)
@@ -190,7 +190,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `pretrained_models` — timm library, EfficientNet/ViT, zero-shot classification with CLIP
 6. `cv_evaluation` — mAP, confusion matrix, grad-CAM visualisation, model deployment considerations
 
-### 15 ab_testing
+### 17 ab_testing
 1. `power_analysis` — statsmodels power, t-test/proportion/chi-square sample size, power curves
 2. `frequentist_tests` — Two-proportion z-test, t-test for means, one/two-sided tests, p-value interpretation
 3. `bayesian_ab` — PyMC Bayesian A/B, posterior probability of superiority, rope decision rule
@@ -198,7 +198,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `experiment_design` — Randomisation, blocking, factorial designs, CONSORT checklist
 6. `effect_sizes_reporting` — Cohen's d, relative uplift, NNT, communicating results to stakeholders
 
-### 16 graphs_networks
+### 18 graphs_networks
 1. `networkx_basics` — Graph/DiGraph creation, node/edge attributes, basic properties
 2. `centrality_community` — Degree/betweenness/PageRank centrality, Louvain/Leiden community detection
 3. `shortest_paths_flow` — BFS/Dijkstra/A*, max flow with NetworkX, minimum spanning tree
@@ -206,7 +206,7 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 5. `bipartite_temporal` — Bipartite graph projections, temporal networks, dynamic community detection
 6. `graph_ml` — Node2Vec embeddings, GNN overview with PyTorch Geometric, link prediction
 
-### 17 geospatial
+### 19 geospatial
 1. `vector_data` — GeoDataFrame, shapely geometries, CRS, spatial joins, geopandas operations
 2. `raster_data` — rasterio, numpy raster operations, zonal statistics, raster/vector interaction
 3. `spatial_analysis` — Spatial autocorrelation (Moran's I), spatial weights with libpysal
@@ -215,30 +215,6 @@ pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn plotl
 6. `geospatial_ml` — Spatial feature engineering, geographically weighted regression, spatial CV
 
 ---
-
-## Build Status
-
-| Folder | Status |
-|---|---|
-| 01_data_wrangling | ✅ Complete |
-| 02_eda | ✅ Complete |
-| 03_statistical_inference | ✅ Complete |
-| 04_regression | ✅ Complete |
-| 05_classification | ✅ Complete |
-| 06_clustering | ✅ Complete |
-| 07_dimensionality_reduction | ✅ Complete |
-| 08_time_series | ✅ Complete |
-| 09_bayesian_methods | ✅ Complete |
-| 10_statistical_modelling | ✅ Complete |
-| 10_model_diagnostics | ✅ Complete |
-| 11_causal_inference | ✅ Complete |
-| 11_data_pipelines | ✅ Complete |
-| 12_nlp_fundamentals | ✅ Complete |
-| 13_deep_learning | ✅ Complete |
-| 14_computer_vision | ✅ Complete |
-| 15_ab_testing | ✅ Complete |
-| 16_graphs_networks | ✅ Complete |
-| 17_geospatial | ✅ Complete |
 
 ---
 *python_methods_library - Samantha McGarrigle*
